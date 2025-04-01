@@ -1,7 +1,5 @@
-######################################
 # Tipología y ciclo de vida de los datos: 
 # PR1: ¿Cómo podemos capturar los datos de la web?
-######################################
 
 ## Descripción 
 
@@ -11,17 +9,17 @@ Este proyecto utiliza Selenium para automatizar la extracción de datos desde el
 
 La librería tiene la siguiente jerarquía:
 
-REPO_TIPOLOGIA/
-├── data/                                # Datos generados en la PR1
-│   |__ resultados_fleet.csv             # Archivo CSV con los datos resultado de la página/s.
-├── memoria/                             # Informes de la PR1
-|   |__PR1_Julio-Lucas.docx              # Memoria docx con las respuestas a los diferentes apartados 
-├── src/                                 # Código fuente 
-│   ├── scrapping_CFRs_EU_PRUEBAS.ipynb  # Jupyter notebook de pruebas
-│   |__ scrapping_fleet_EU.py            # Código python para realizar la captura de los datos de la web
-├── README.md                            # Archivo de documentación del proyecto
-|__ requirements.txt                     # Lista de dependencias necesarias
-
+REPO_TIPOLOGIA/  
+├── data/                                # Datos generados en la PR1  
+│   ├── resultados_fleet.csv             # Archivo CSV con los datos resultado de la página/s.  
+├── memoria/                             # Informes de la PR1  
+│   ├── PR1_Julio-Lucas.docx             # Memoria docx con las respuestas a los diferentes apartados   
+├── src/                                 # Código fuente   
+│   ├── scrapping_CFRs_EU_PRUEBAS.ipynb  # Jupyter notebook de pruebas  
+│   ├── scrapping_fleet_EU.py            # Código Python para realizar la captura de los datos de la web  
+├── README.md                            # Archivo de documentación del proyecto  
+├── requirements.txt                     # Lista de dependencias necesarias  
+  
 ### Archivos Principales
 
 - src/: Contiene el código fuente para la captura de los datos de la web.
