@@ -29,8 +29,11 @@ btn_search.click()
 # Esperar a que el selector de la página de resultados se muestre
 wait.until(EC.presence_of_element_located((By.CLASS_NAME, "select2-selection--single")))
 
+# Esperar hasta que el elemento esté visible y clickeable
+page_size_selector = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "select2-selection--single")))
+wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "select2-selection--single")))
+
 # Hacer clic en el selector
-page_size_selector = driver.find_element(By.CLASS_NAME, "select2-selection--single")
 page_size_selector.click()
 
 # Esperar a que la lista con opciones sea visible
@@ -93,7 +96,7 @@ while True:
 # Crear DataFrame con todos los datos recopilados
 df = pd.DataFrame(data, columns=column_names)
 
-df.to_csv("data_scrapping_EU.csv", index= False, encoding= "uft-8")
+df.to_csv("./data/resultados_scrapping_fleet.csv", index= False, encoding= "uft-8")
 
 # Cerrar el driver
 driver.quit()
