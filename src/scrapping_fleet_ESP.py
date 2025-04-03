@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-##------------------------------------------------------------------------------------------------------------##
+##------------------------------------------------------------------------------------------------------------------##
 # Scraping de datos de buques de España desde el censo de buques del Ministerio de Agricultura, Pesca y Alimentación
 # Este script permite buscar buques por su CFR (Código de Flota de Registro) y extraer información relevante.
 # El script utiliza la librería requests para realizar solicitudes HTTP y BeautifulSoup para analizar el HTML.
@@ -17,7 +17,7 @@ df = pd.read_csv(file_path, dtype=str)  # Leer como string para evitar problemas
 df_esp = df[df["Flag"] == "ESP"].copy()
 # Obtener la lista de identificadores únicos CFR
 cfr_list = df_esp["CFR"].dropna().unique().tolist()
-##------------------------------------------------------------------------------------------------------------##
+##------------------------------------------------------------------------------------------------------------------##
 
 # URL base de búsqueda
 base_url = "https://servicio.pesca.mapama.es/censo/ConsultaBuqueRegistro/Buques/Search"
