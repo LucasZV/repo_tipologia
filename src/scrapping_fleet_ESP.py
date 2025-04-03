@@ -11,7 +11,7 @@ import pandas as pd
 # Fecha: 2023-10-23
 
 # Cargar el dataset
-file_path = r"/Users/macbookairjulio/Documents/GitHub/repo_tipologia/data/resultados_fleet.csv"
+file_path = "./data/resultados_fleet.csv"
 df = pd.read_csv(file_path, dtype=str)  # Leer como string para evitar problemas de formato
 # Filtrar solo los buques de España
 df_esp = df[df["Flag"] == "ESP"].copy()
@@ -99,6 +99,6 @@ if cfrs_sin_buque:
     print(cfrs_sin_buque)
 
 # Guardar los datos en un archivo CSV
-output_file = r"./data/datos_buques_ESP.csv"
+output_file = "./data/datos_buques_ESP.csv"
 df.to_csv(output_file, encoding="utf-8", index=False)
 print(f"\nDatos guardados en {output_file}")
