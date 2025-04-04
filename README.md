@@ -63,6 +63,10 @@ QT_LOGGING_RULES="*.debug=false" python scrapping_fleet_EU.py
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT, lo que te permite usar, modificar y distribuir el software libremente, siempre y cuando mantengas el aviso de copyright. 
-Consulta el archivo [`LICENSE`](./LICENSE) o [Licencia MIT](https://opensource.org/licenses/MIT) para más detalles.
+Este proyecto está bajo la Licencia ‘Creative Commons Attribution 4.0 International’. Esta licencia permite que el dataset sea usado, compartido, adaptado y redistribuido, siempre que se cumplan tres condiciones fundamentales:
+- Atribución (BY): Se debe reconocer adecuadamente la autoría del trabajo, mencionando tanto al autor del scraping como a las fuentes oficiales (Ministerio de Agricultura, Pesca y Alimentación de España y la Comisión Europea).
+- No Comercial (NC): Restringe el uso del dataset a fines no comerciales, protegiendo así su uso en contextos educativos, investigativos o de divulgación sin que se explote con fines lucrativos.
+- Compartir Igual (SA): Si se generan obras derivadas o se modifica el dataset, estas deben compartirse bajo la misma licencia, garantizando que el conocimiento permanezca abierto y libre para futuras reutilizaciones.
+ 
+Consulta el archivo [`LICENSE`](./LICENSE.txt) o [Licencia MIT](https://creativecommons.org/licenses/by/4.0/deed.en) para más detalles.
 
