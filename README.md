@@ -9,8 +9,10 @@ Este proyecto utiliza Selenium, Requests y BeautifulSoup para automatizar la ext
 
 - **data/**: Contiene los datos generados en la PR1.
   - `resultados_fleet.csv`: Archivo CSV con los datos extraídos del registro europeo.
+    
 - **memoria/**: Informes de la PR1.
   - `PR1_Ubeda_Quesada_Julio-Zamora_Vera_Lucas.pdf`: Documento de la memoria del proyecto.
+    
 - **src/**: Código fuente.
   - `scrapping_CFRs_EU_PRUEBAS.ipynb`: Jupyter notebook de pruebas.
   - `scrapping_fleet_EU.py`: Script para extraer datos de la web del registro europeo.
@@ -19,6 +21,7 @@ Este proyecto utiliza Selenium, Requests y BeautifulSoup para automatizar la ext
   - `README.md`: Archivo de documentación del proyecto.
   - `requirements.txt`: Lista de dependencias necesarias.
   - `LICENSE.txt`: Licencia bajo la que se distribuye el dataset generado.
+    
 
 ## Uso
 
