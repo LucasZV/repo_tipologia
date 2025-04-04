@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ```
 ### 3. Ejecuta el archivo principal:
 
-1. Ejectuta el script de la siguiente manera:
+3.1. Ejectuta el script de la siguiente manera:
 
 - Si lo ejecutas desde Windows simplemente ejecuta el siguiente comando en la terminal: 
 ```bash
@@ -49,7 +49,7 @@ python main.py
 QT_LOGGING_RULES="*.debug=false" main.py
 ```
 
-2.  El script realizará lo siguiente:
+3.2. El script realizará lo siguiente:
 
 - Accederá a la página de Fleet Europa.
 - Seleccionará la opción "EU" y "All Vessels".
