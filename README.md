@@ -3,25 +3,22 @@
 
 ## Descripción 
 
-Este proyecto utiliza Selenium para automatizar la extracción de datos desde el sitio web de Fleet Europa de la Unión Europea. El script automatiza la búsqueda de todos los barcos registrados, navega a través de las páginas de resultados y guarda los datos en un archivo CSV.
+Este proyecto utiliza Selenium, Requests y BeautifulSoup para automatizar la extracción de datos desde el sitio web de Fleet Europa de la Unión Europea y el registro nacional de la flota pesquera española. El script automatiza la búsqueda de todos los barcos registrados, navega a través de las páginas de resultados y guarda los datos en un archivo CSV.
 
 ## Estructura del Proyecto
 
 - **data/**: Contiene los datos generados en la PR1.
-  - `resultados_fleet.csv`: Archivo CSV con los datos extraídos.
+  - `resultados_fleet.csv`: Archivo CSV con los datos extraídos del registro europeo.
 - **memoria/**: Informes de la PR1.
-  - `PR1_Julio-Lucas.docx`: Documento con las respuestas a los apartados.
+  - `PR1_Ubeda_Quesada_Julio-Zamora_Vera_Lucas.pdf`: Documento de la memoria del proyecto.
 - **src/**: Código fuente.
   - `scrapping_CFRs_EU_PRUEBAS.ipynb`: Jupyter notebook de pruebas.
-  - `scrapping_fleet_EU.py`: Script para extraer datos de la web.
-- `README.md`: Archivo de documentación del proyecto.
-- `requirements.txt`: Lista de dependencias necesarias.
-
-### Archivos Principales
-
-- src/: Contiene el código fuente para la captura de los datos de la web.
-- memoria/: Contiene el informe solicitado en la PR1, completando cada uno de los apartados requeridos.
-- data/: Contiene el dataset en formato csv, capturado, transformado y almacenado para su posterior manipulacion y/o análisis.
+  - `scrapping_fleet_EU.py`: Script para extraer datos de la web del registro europeo.
+  - `scrapping_fleet_ESP.py`: Script para extraer datos de la web del registro español a partir de los CFRs encontrados en el registro europeo.
+  - `main.py`: Script para extraer datos de la web del registro europeo y posteriormente extraer los datos del registro español.
+  - `README.md`: Archivo de documentación del proyecto.
+  - `requirements.txt`: Lista de dependencias necesarias.
+  - `LICENSE.txt`: Licencia bajo la que se distribuye el dataset generado.
 
 ## Uso
 
@@ -45,21 +42,25 @@ pip install -r requirements.txt
 
 - Si lo ejecutas desde Windows simplemente ejecuta el siguiente comando en la terminal: 
 ```bash
-python scrapping_fleet_EU.py
+python main.py
 ```
 - Si usas macos y quieres evitar mensajes de warnings ejecuta: 
 ```bash
-QT_LOGGING_RULES="*.debug=false" python scrapping_fleet_EU.py
+QT_LOGGING_RULES="*.debug=false" main.py
 ```
 
 2.  El script realizará lo siguiente:
 
-- - Accederá a la página de Fleet Europa.
-- - Seleccionará la opción "EU" y "All Vessels".
-- - Iniciará la búsqueda de barcos registrados.
-- - Ajustará el número de resultados por página a 100.
-- - Recorrerá todas las páginas de resultados.
-- - Extraerá los datos y los guardará en ./data/resultados_scrapping_fleet.csv.
+- Accederá a la página de Fleet Europa.
+- Seleccionará la opción "EU" y "All Vessels".
+- Iniciará la búsqueda de barcos registrados.
+- Ajustará el número de resultados por página a 100.
+- Recorrerá todas las páginas de resultados.
+- Extraerá los datos y los guardará en ./data/resultados_scrapping_fleet.csv.
+- Generará una lista con los CFRs de los buques españoles.
+- Accede a la página del registro español.
+- Por cada CFR de la lista realiza una petición a la web y almacena los datos en un DataFrame.
+- Guarda el DataFrame generado en ./data/datos_buques_ESP.csv
 
 ## Licencia
 
