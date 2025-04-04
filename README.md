@@ -68,5 +68,5 @@ Este proyecto está bajo la Licencia ‘Creative Commons Attribution 4.0 Interna
 - No Comercial (NC): Restringe el uso del dataset a fines no comerciales, protegiendo así su uso en contextos educativos, investigativos o de divulgación sin que se explote con fines lucrativos.
 - Compartir Igual (SA): Si se generan obras derivadas o se modifica el dataset, estas deben compartirse bajo la misma licencia, garantizando que el conocimiento permanezca abierto y libre para futuras reutilizaciones.
  
-Consulta el archivo [`LICENSE`](./LICENSE.txt) o [Licencia MIT](https://creativecommons.org/licenses/by/4.0/deed.en) para más detalles.
+Consulta el archivo [`LICENSE`](./LICENSE.txt) o [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) para más detalles.
 
